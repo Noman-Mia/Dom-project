@@ -37,7 +37,7 @@
 
     <!-- Main Section -->
     <main class="bg-gray-50">
-        <div class="flex flex-col lg:flex-row w-4/5 lg:w-11/12 xl:w-4/5 mx-auto py-16 md:py-24 gap-5">
+        <div class="flex flex-col lg:flex-row w-4/5 lg:w-11/12 xl:w-4/5 mx-auto py-16 pb-24 md:py-24 gap-5">
             <!-- Card Section -->
             <div class="">
                 <!-- Card Row 1 -->
@@ -46,7 +46,7 @@
                     <!-- Card-1 -->
                     <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
                         <figure class="bg-gray-100 h-44 rounded-lg p-10">
-                          <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
+                          <img src="images/prod1.png" alt="Shoes" class="rounded-xl"/>
                         </figure>
                         <div class="card-body items-center text-center pb-0">
                             <div class="rating">
@@ -73,7 +73,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <h2 class="card-title black">K. Accessories</h2>
+                            <h2 class="card-title black">K. Tools</h2>
                             <p class="text-xl text-[#11111180]"><span>25.00</span> TK</p>
                         </div>
                     </div>
@@ -219,25 +219,25 @@
                       </div>
                 </div>
                 <div class="p-5 pb-0 bg-white mt-5 rounded-lg">
-                    <div id="cart" class="text-lg font-medium black py-3 border-b">
+                    <div id="cart" class="text-lg font-medium black pb-4 border-b">
 
                     </div>
-                    <div class="text-lg font-medium black py-3 border-b">
+                    <div class="text-lg font-medium black py-4 border-b">
                         <p>Total price: <span class="text-[#11111180]"><span id="total-price">0.00</span> TK</span></p>
                         <p>Discount : <span class="text-[#11111180]"><span id="discount">0.00</span> TK</span></p>
                         <p>Total: <span class="text-[#11111180]"><span id="total">0.00</span> TK</span></p>
                     </div>
                     <div class="relative top-6">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button id="btn-purchase" onclick="my_modal_5.showModal()" class="btn btn-secondary w-full normal-case text-lg" >Make Purchase</button>
+                        <button id="btn-purchase" onclick="my_modal_5.showModal()" class="btn btn-secondary w-full normal-case text-lg" disabled>Make Purchase</button>
                     </div>
                     <!-- Congratulations Modal Section -->
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <form method="dialog" class="modal-box flex flex-col items-center py-16">
+                    <dialog id="my_modal_5" class="modal modal-middle">
+                        <form method="dialog" class="modal-box flex flex-col items-center py-8 md:py-10 lg:py-16">
                             <img src="images/congo.png" alt="Congratulations">
-                            <h3 class="font-bold text-5xl black mt-10">Congratulations!</h3>
-                            <p class="py-4">You have purchased the products</p>
-                            <div class="modal-action">
+                            <h3 class="font-bold text-3xl md:text-5xl black mt-6 xl:mt-10">Congratulations!</h3>
+                            <p class="py-4 text-center">You have purchased the products</p>
+                            <div class="modal-action my-1">
                             <!-- if there is a button in form, it will close the modal -->
                             <button id="btn-reset" class="btn btn-secondary normal-case text-lg">Go Home</button>
                             </div>

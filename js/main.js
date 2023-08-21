@@ -51,8 +51,8 @@ document.getElementById('btn-coupon').addEventListener('click', function(){
     }
     else{
         alert('Invalid Coupon Code!');
-        couponInputElement.value = ''
     }
+    couponInputElement.value = '';
 })
 
 
