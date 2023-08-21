@@ -229,9 +229,20 @@
                     </div>
                     <div class="relative top-6">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button id="btn-purchase" onclick="my_modal_5.showModal()" class="btn btn-secondary w-full normal-case text-lg" disabled>Make Purchase</button>
+                        <button id="btn-purchase" onclick="my_modal_5.showModal()" class="btn btn-secondary w-full normal-case text-lg" >Make Purchase</button>
                     </div>
-
+                    <!-- Congratulations Modal Section -->
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box flex flex-col items-center py-16">
+                            <img src="images/congo.png" alt="Congratulations">
+                            <h3 class="font-bold text-5xl black mt-10">Congratulations!</h3>
+                            <p class="py-4">You have purchased the products</p>
+                            <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button id="btn-reset" class="btn btn-secondary normal-case text-lg">Go Home</button>
+                            </div>
+                        </form>
+                    </dialog>
                 </div>
             </div>
         </div>
