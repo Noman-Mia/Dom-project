@@ -54,3 +54,15 @@ document.getElementById('btn-coupon').addEventListener('click', function(){
         couponInputElement.value = ''
     }
 })
+
+
+// Reset Cart Data 
+document.getElementById('btn-reset').addEventListener('click', function(){
+    window.location.href = 'index.html';
+    totalPrice = 0
+    totalPriceElement.innerText = totalPrice.toFixed(2);
+    discount = 0
+    discountElement.innerText = discount.toFixed(2);
+    total = 0
+    totalElement.innerText = total.toFixed(2);
+})
