@@ -21,6 +21,7 @@
     </style>
 </head>
 <body class="font-work-sans">
+    <!-- Banner Section -->
     <header class="bg-yellow-50 py-16">
         <div class="flex flex-col-reverse lg:flex-row justify-between items-center gap-8 lg:gap-4 w-4/5 lg:w-10/12 xl:w-4/5 mx-auto">    
             <div class="w-full lg:w-6/12 text-center space-y-10">
@@ -33,5 +34,181 @@
             </div>
         </div>
     </header>
+
+    <!-- Main Section -->
+    <main class="bg-gray-50">
+        <div class="flex flex-col lg:flex-row w-4/5 lg:w-11/12 xl:w-4/5 mx-auto py-16 md:py-24 gap-5">
+            <!-- Card Section -->
+            <div class="">
+                <!-- Card Row 1 -->
+                <h2 class="text-3xl md:text-4xl font-bold black">Kitchenware</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-5 mt-8 mb-14">
+                    <!-- Card-1 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">K. Accessories</h2>
+                            <p class="text-xl text-[#11111180]"><span>39.00</span> TK</p>
+                        </div>
+                    </div>
+                    <!-- Card-2 -->
+                    <div onclick="addToCart(this)" class="card  bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">K. Accessories</h2>
+                            <p class="text-xl text-[#11111180]"><span>25.00</span> TK</p>
+                        </div>
+                    </div>
+                    <!-- Card-3 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">Home Cooker</h2>
+                            <p class="text-xl text-[#11111180]"><span>49.00</span> TK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Row 2 -->
+                <h2 class="text-3xl md:text-4xl font-bold black">Sportswear</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-5 mt-8 mb-14">
+                    <!-- Card-4 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod4.png" alt="Cap" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">Sports Back Cap</h2>
+                            <p class="text-xl text-[#11111180]"><span>65.00</span> TK</p>
+                        </div>
+                    </div>
+                    <!-- Card-5 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod5.png" alt="Full Jersey Set" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">Full Jersey Set</h2>
+                            <p class="text-xl text-[#11111180]"><span>69.00</span> TK</p>
+                        </div>
+                    </div>
+                    <!-- Card-6 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod6.png" alt="Sports cates" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">Sports cates</h2>
+                            <p class="text-xl text-[#11111180]"><span>59.00</span> TK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Row 3 -->
+                <h2 class="text-3xl md:text-4xl font-bold black">Furniture</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-5 mt-8 mb-14">
+                    <!-- Card-7 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod7.png" alt="Single Relax Chair" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">Single Relax Chair</h2>
+                            <p class="text-xl text-[#11111180]"><span>185.00</span> TK</p>
+                        </div>
+                    </div>
+                    <!-- Card-8 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod8.png" alt="Children play" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">Children play</h2>
+                            <p class="text-xl text-[#11111180]"><span>299.00</span> TK</p>
+                        </div>
+                    </div>
+                    <!-- Card-9 -->
+                    <div onclick="addToCart(this)" class="card bg-base-100 p-5 rounded-lg hover:drop-shadow-2xl hover:cursor-pointer">
+                        <figure class="bg-gray-100 h-44 rounded-lg p-10">
+                          <img src="images/prod9.png" alt="Flexible Sofa" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center pb-0">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="card-title black">Flexible Sofa</h2>
+                            <p class="text-xl text-[#11111180]"><span>339.00</span> TK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
