@@ -208,6 +208,32 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Cart Section -->
+            <div class="3/4 lg:w-1/4 mt-6 lg:mt-20">
+                <div class="p-5 bg-white rounded-lg">
+                    <h2 class="text-xl font-medium black">Have coupon?</h2>
+                    <div class="join mt-2 w-full">
+                        <input id="coupon-input" class="input input-bordered join-item w-2/3" placeholder="Coupon"/>
+                        <button id="btn-coupon" class="btn btn-secondary join-item normal-case text-lg" disabled>Apply</button>
+                      </div>
+                </div>
+                <div class="p-5 pb-0 bg-white mt-5 rounded-lg">
+                    <div id="cart" class="text-lg font-medium black py-3 border-b">
+
+                    </div>
+                    <div class="text-lg font-medium black py-3 border-b">
+                        <p>Total price: <span class="text-[#11111180]"><span id="total-price">0.00</span> TK</span></p>
+                        <p>Discount : <span class="text-[#11111180]"><span id="discount">0.00</span> TK</span></p>
+                        <p>Total: <span class="text-[#11111180]"><span id="total">0.00</span> TK</span></p>
+                    </div>
+                    <div class="relative top-6">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="btn-purchase" onclick="my_modal_5.showModal()" class="btn btn-secondary w-full normal-case text-lg" disabled>Make Purchase</button>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </main>
 </body>
