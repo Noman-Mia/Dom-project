@@ -34,3 +34,23 @@ function addToCart(event){
         BtnPurchase.removeAttribute('disabled');
     }
 }
+
+
+// Use Coupon Code
+document.getElementById('btn-coupon').addEventListener('click', function(){
+    const couponCode = 'SELL200';
+    const couponInputElement = document.getElementById('coupon-input');
+    const couponInput = couponInputElement.value;
+
+    if(couponInput === couponCode){
+        discount = totalPrice * (20/100);
+        total = totalPrice - discount;
+        discountElement.innerText = discount.toFixed(2);
+        totalElement.innerText = total.toFixed(2);
+        alert(`Congrates! You have got discount ${discount.toFixed()} Tk`);
+    }
+    else{
+        alert('Invalid Coupon Code!');
+        couponInputElement.value = ''
+    }
+})
